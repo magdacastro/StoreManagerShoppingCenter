@@ -114,10 +114,10 @@ public class Shopping {
 
         for(Store store: stores) {
             if (store instanceof Computing computingStore) {
-                double valorSeguro = computingStore.getElectronicsInsurance();
+                double insurance = computingStore.getElectronicsInsurance();
 
-                if (valorSeguro > highestInsuranceValue) {
-                    highestInsuranceValue = valorSeguro;
+                if (insurance > highestInsuranceValue) {
+                    highestInsuranceValue = insurance;
                     mostExpensiveStore = computingStore;
                 }
             }

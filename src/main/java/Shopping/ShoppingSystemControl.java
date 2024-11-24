@@ -8,10 +8,11 @@ import Store.*;
 
 
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ShoppingSystemControl {
-    Scanner scan = new Scanner(System.in);
+    Scanner scan = new Scanner(System.in).useLocale(Locale.US);
     ArrayList<Shopping> shopping = new ArrayList<>();
 
     public ShoppingSystemControl() {
@@ -21,10 +22,10 @@ public class ShoppingSystemControl {
         int option;
         do {
             System.out.println("\n--- Menu de Opções ---");
-            System.out.println("1. Opção 1 - Criar um shopping");
-            System.out.println("1. Opção 2 - Criar uma loja");
-            System.out.println("2. Opção 3 - Criar um produto");
-            System.out.println("3. Opção 4 - Sair");
+            System.out.println("Opção 1 - Criar um shopping");
+            System.out.println("Opção 2 - Criar uma loja");
+            System.out.println("Opção 3 - Criar um produto");
+            System.out.println("Opção 4 - Sair");
             System.out.print("Escolha uma opção: ");
             option = scan.nextInt();
 
